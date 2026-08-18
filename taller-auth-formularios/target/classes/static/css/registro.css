@@ -1,0 +1,9 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.register-card {
+    width: min(32rem, calc(100% - 2rem));
+    border-radius: 15px;
+}
