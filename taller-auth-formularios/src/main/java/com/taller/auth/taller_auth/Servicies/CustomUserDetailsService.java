@@ -22,12 +22,10 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Usuarios u = usuariosRepository.findByUsername(username);
         
-        // Si el usuario no existe, lanza excepción
         if (u == null) {
             throw new UsernameNotFoundException("No existe: " + username);
         }
         
-        // Construye un UserDetails usando el patrón Builder de Spring Security
         return User.builder()
             .username(u.getUsername())
             .password(u.getPassword())      // ya codificada con BCrypt
