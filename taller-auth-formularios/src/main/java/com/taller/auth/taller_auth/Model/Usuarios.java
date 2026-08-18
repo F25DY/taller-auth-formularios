@@ -1,4 +1,4 @@
-package com.taller.auth.taller_auth_formularios.Model;
+package com.taller.auth.taller_auth.Model;
 
 import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;

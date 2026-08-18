@@ -1,4 +1,4 @@
- package com.taller.auth.taller_auth_formularios;
+ package com.taller.auth.taller_auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

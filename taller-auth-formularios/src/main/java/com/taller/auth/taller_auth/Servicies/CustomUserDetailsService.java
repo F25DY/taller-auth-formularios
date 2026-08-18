@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.taller.auth.taller_auth.Repositories.UsuariosRepository;
-import com.taller.auth.taller_auth_formularios.Model.Usuarios;
+import com.taller.auth.taller_auth.Model.Usuarios;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
