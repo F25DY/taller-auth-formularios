@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.taller.auth.taller_auth.Repositories.UsuariosRepository;
-import com.taller.auth.taller_auth_formularios.Model.Usuarios;
+import com.taller.auth.taller_auth.Model.Usuarios;
 
 @Configuration
 public class DataInitializer {

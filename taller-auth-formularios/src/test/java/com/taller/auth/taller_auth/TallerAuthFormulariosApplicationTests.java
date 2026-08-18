@@ -1,4 +1,4 @@
-package com.taller.auth.taller_auth_formularios;
+package com.taller.auth.taller_auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.taller.auth.taller_auth_formularios.security;
+package com.taller.auth.taller_auth.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
