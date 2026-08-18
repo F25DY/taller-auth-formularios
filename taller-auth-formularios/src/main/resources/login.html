@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1d2b64, #f8cdda);
+            height: 100vh;
+        }
+        .login-card {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="card login-card shadow-lg" style="width: 28rem;">
+        <div class="card-header bg-dark text-white text-center">
+            <h3>Bienvenido</h3>
+            <p class="mb-0">Accede a tu cuenta</p>
+        </div>
+        <div class="card-body p-4">
+            <div th:if="${param.error}" class="alert alert-danger" role="alert">
+                Usuario o contraseña incorrectos.
+            </div>
+            <div th:if="${param.registro}" class="alert alert-success" role="alert">
+                Registro completado. Ya puedes iniciar sesión.
+            </div>
+            <div th:if="${param.logout}" class="alert alert-info" role="alert">
+                Has cerrado sesión correctamente.
+            </div>
+            <form th:action="@{/login}" th:object="${usuario}" method="post">
+                <div class="form-floating mb-3">
+                    <input type="text" th:field="*{username}" class="form-control" id="username" placeholder="Usuario">
+                    <label for="username">Usuario</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" th:field="*{password}" class="form-control" id="password" placeholder="Contraseña">
+                    <label for="password">Contraseña</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+            </form>
+        </div>
+        <div class="card-footer text-center bg-light">
+            <small>¿No tienes cuenta? <a th:href="@{/registro}" class="text-primary fw-bold">Regístrate</a></small>
+        </div>
+    </div>
+</body>
+</html>
