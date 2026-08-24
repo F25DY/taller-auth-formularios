@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TallerAuthFormulariosApplication<taller-auth-formularios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.taller.auth.taller_auth_formularios.TallerAuthFormulariosApplication",
+            "projectName": "taller-auth-formularios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TallerAuthFormulariosApplication<taller-auth-formularios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.taller.auth.taller_auth.TallerAuthFormulariosApplication",
+            "projectName": "taller-auth-formularios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
