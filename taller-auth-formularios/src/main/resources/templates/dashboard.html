@@ -13,9 +13,6 @@
         <div class="card-body p-4 text-center">
             <h4 class="text-primary">Bienvenido, <span th:text="${#authentication.name}"></span></h4>
             <p class="lead">Has iniciado sesión correctamente en el sistema.</p>
-            <div class="mt-4">
-                <a th:href="@{/registro}" class="btn btn-success">Registrar otro usuario</a>
-            </div>
         </div>
         <div class="card-footer text-center bg-light">
             <a th:href="@{/logout}" class="btn btn-outline-danger w-100">Cerrar sesión</a>
