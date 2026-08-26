@@ -15,7 +15,10 @@
             <p class="lead">Has iniciado sesión correctamente en el sistema.</p>
         </div>
         <div class="card-footer text-center bg-light">
-            <a th:href="@{/logout}" class="btn btn-outline-danger w-100">Cerrar sesión</a>
+            <form th:action="@{/logout}" method="post">
+                <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+                <button type="submit" class="btn btn-outline-danger w-100">Cerrar sesión</button>
+            </form>
         </div>
     </div>
 </body>

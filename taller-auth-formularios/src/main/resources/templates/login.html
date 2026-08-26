@@ -29,6 +29,10 @@
                 Has cerrado sesión correctamente.
             </div>
 
+            <div th:if="${param.duplicado}" class="alert alert-warning" role="alert">
+                Tu sesión anterior fue cerrada porque se inició sesión en otro navegador.
+            </div>
+
             <form th:action="@{/procesar-login}" method="post">
 
                 <div class="form-floating mb-3">
